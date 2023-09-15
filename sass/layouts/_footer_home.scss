@@ -1,0 +1,73 @@
+// resets
+@import "../base/reset";
+@import "../base/typography";
+
+// content
+#footer {
+  background: #2c343e;
+  padding: 47px 0;
+  margin-top: 216px;
+
+  .footer_nav {
+    max-width: 1111px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .aside_footer {
+      display: flex;
+      align-items: center;
+      gap: 102px;
+    }
+
+    .footer_item {
+      display: flex;
+      gap: 33px;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: #83888f;
+        font-family: Barlow;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px; /* 125% */
+        letter-spacing: 0.923px;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        &:hover {
+          color: #fefcf7;
+          font-family: Barlow;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 15px; /* 125% */
+          letter-spacing: 0.923px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .footer_icons {
+    display: flex;
+    gap: 33px;
+    width: 120px;
+    height: 24px;
+    flex-shrink: 0;
+
+    li {
+      color: #fefcf7;
+      width: 120px;
+      height: 24px;
+      transition: 0.3s;
+
+      &:hover {
+        color: #fdd6ba;
+        cursor: pointer;
+      }
+    }
+  }
+}

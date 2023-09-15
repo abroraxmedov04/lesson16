@@ -1,0 +1,124 @@
+@import "../base/reset";
+@import "../base/typography";
+
+// main content
+#headquators {
+  margin-top: 168px;
+
+  .home_container {
+    .works_title {
+      color: #83888f;
+      font-family: Fraunces;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px; /* 133.333% */
+    }
+
+    .path {
+      width: 760px;
+      border: 2px solid #fdd6ba;
+      display: flex;
+      position: relative;
+      margin-top: 80px;
+
+      div {
+        width: 31px;
+        height: 31px;
+        border: 1px solid #0e8784;
+        border-radius: 50%;
+        position: absolute;
+        top: -15px;
+        background: #fefcf7;
+        left: 50%;
+      }
+
+      div:before {
+        content: "";
+        width: 31px;
+        height: 31px;
+        border: 1px solid #0e8784;
+        border-radius: 50%;
+        position: absolute;
+        left: -1310%;
+        top: 0;
+        background: #fefcf7;
+        gap: 100px;
+      }
+      div::after {
+        content: "";
+        width: 31px;
+        height: 31px;
+        border: 1px solid #0e8784;
+        border-radius: 50%;
+        position: absolute;
+        right: -1310%;
+        top: 0;
+        background: #fefcf7;
+        gap: 100px;
+      }
+    }
+  }
+  .works_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+
+    .lworks__card {
+      max-width: 285px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+
+      img{
+        width: 51px;
+        height: 51px;
+      }
+
+      h2 {
+        color: #333d4b;
+        font-family: Fraunces;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 900;
+        margin-top: 45.93px;
+        line-height: 36px; /* 112.5% */
+      }
+
+      p {
+        color: #333d4b;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .button {
+    padding: 15px 31px;
+    margin-top: 64px;
+    border-radius: 6px;
+    background: #66d2cf;
+    border: none;
+    color: #fefcf7;
+    // text_style
+    text-align: center;
+    font-family: Fraunces;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      background: #fefcf7;
+      color: #66d2cf;
+      border: 1px solid#66d2cf;
+      //   border: #66d2cf;
+    }
+  }
+}

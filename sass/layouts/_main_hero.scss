@@ -1,0 +1,61 @@
+@import "../base/reset";
+@import "../base/typography";
+
+.main_hero {
+  background-image: url(/assets/images/hero_banner.png);
+  background-size: cover;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 230px;
+  padding-bottom: 115px;
+  border-radius: 15px;
+
+  .hero_title {
+    color: #fefcf7;
+    font-family: Fraunces;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    max-width: 493px;
+    width: 100%;
+  }
+
+  .hero_desc {
+    color: #fefcf7;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 445px;
+    width: 100%;
+    margin-top: 32px;
+    opacity: 0.8;
+  }
+
+  .hero_btn {
+    padding: 15px 31px;
+    margin-top: 56px;
+    border-radius: 6px;
+    background: #66d2cf;
+    border: none;
+    color: #fefcf7;
+    // text_style
+    text-align: center;
+    font-family: Fraunces;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      background: #fefcf7;
+      color: #66d2cf;
+      //   border: #66d2cf;
+    }
+  }
+}

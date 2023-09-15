@@ -1,0 +1,47 @@
+@import "../base/reset";
+@import "../base/typography";
+
+#Our_quality {
+  //   margin-top: 168px;
+  background: rgb(41, 48, 57);
+  //   position: relative;
+//   max-width: 1400px;
+  height: 474px;
+  margin: 0 auto;
+  border-radius: 15px;
+  // flex-shrink: 0;
+
+  .quality_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    flex-direction: row-reverse;
+
+    img {
+      border-radius: 15px;
+      transform: translateY(-20%);
+      //   position: absolute;
+    }
+
+    .info_box {
+      h2 {
+        color: #fefcf7;
+        font-family: Fraunces;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px; /* 120% */
+      }
+
+      p {
+        color: #fefcf7;
+        font-family: Barlow;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        margin-top: 32px;
+      }
+    }
+  }
+}

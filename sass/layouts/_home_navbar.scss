@@ -1,0 +1,47 @@
+@import "../base/typography";
+
+#header {
+  .navbar {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+
+    .navbar_wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 43.56px 0;
+      align-items: center;
+    }
+
+    .navbar_item {
+      display: inline-flex;
+      gap: 33px;
+
+      a {
+        text-decoration: none;
+        color: #83888f;
+        font-family: "Barlow", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 0.923px;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        &:hover{
+            color: #333D4B;
+            font-family: "Barlow", sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 0.923px;
+            text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
